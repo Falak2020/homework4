@@ -1,0 +1,25 @@
+@import "./variables";
+
+*{
+    box-sizing: border-box;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+//header Style**********************
+header{
+    .default-color {
+        background-color: #ffffff !important;
+    }
+     .nav-link{
+        color: $nav-link-color !important;   
+    }
+   
+    .btn-try{
+        border: 1px solid $btn-try-border;
+        background-color: transparent;
+    }
+} 
+
+

@@ -14,7 +14,7 @@ html , body{
     background-image: url('../images/BG.svg'); 
     background-position: bottom center;
     background-size: cover;
-    height: 900px;
+    height: 500px;
     .display-nav{
       display: grid;
       grid-template-columns: auto auto;
@@ -79,21 +79,39 @@ html , body{
                 margin-bottom: 5rem;
             }
         }
-         
-
-       
         
     }
         
 } 
-   
+#effectiv-tools {
+    .paragraph2{
+        h2{
+            font-family:$font-header;
+            font-size: 2rem; 
+        }
+        p{
+            font-family:$font-roboto;  
+        }
+    }
+    .row{
+        justify-content:space-evenly;
+        h3{
+            font-family: $font-header;
+            font-size: 1rem;
+        }
+    }
+}  
     @include md {
-        
+        .header{
+            height: 600px;
+
+            }
             
     }
  
     @include lg {
         .header{
+            height: 900px;
             .display-nav{
                 display: flex;
                 .navbar-brand{

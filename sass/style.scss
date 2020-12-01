@@ -1,5 +1,6 @@
 @import "./variables";
 @import"./breakponts";
+@import"./mixins";
 
 *{
     box-sizing: border-box;
@@ -83,11 +84,11 @@ html , body{
     }
         
 } 
+
 #effectiv-tools {
     .paragraph2{
         h2{
-            font-family:$font-header;
-            font-size: 2rem; 
+          @extend .h-style;
         }
         p{
             font-family:$font-roboto;  
@@ -100,7 +101,46 @@ html , body{
             font-size: 1rem;
         }
     }
-}  
+} 
+#process-flow{
+    
+    .row{
+        position: relative;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10rem;
+        .paragraph-3{
+            margin-top: 5rem;
+            
+            
+        }
+        .shape-2{
+            position: absolute;
+            top:0;
+            left: -300px;
+            width: 800px;
+        }
+
+        h2{
+            @extend .h-style;
+            padding-right:10rem;
+            padding-left:4rem;
+        }
+        
+        ul{
+            list-style: none;
+            .numbers{
+                color: $numbers;
+                font-size: 2rem;
+                font-family:$font-header;
+            }
+            h3{
+                font-family: $font-header;
+                font-size: 1rem;
+            }
+        }
+    }
+}
     @include md {
         .header{
             height: 600px;

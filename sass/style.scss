@@ -110,9 +110,7 @@ html , body{
         grid-template-columns:1fr 1fr;
         gap:10rem;
         .paragraph-3{
-            margin-top: 5rem;
-            
-            
+            margin-top: 5rem;   
         }
         .shape-2{
             position: absolute;
@@ -123,7 +121,7 @@ html , body{
 
         h2{
             @extend .h-style;
-            padding-right:10rem;
+            padding-right:0rem;
             padding-left:4rem;
         }
         
@@ -140,6 +138,46 @@ html , body{
             }
         }
     }
+}
+#statistic{
+    h1{
+     @extend .h-style;
+     padding:3rem 20rem;
+     text-align: center;
+    }
+    .para{
+        @extend .p-style;
+        text-align: center;
+        padding:0 20rem;
+    }
+    .map-ap{
+       background-image: url(../images/Map.png);
+       background-size: auto;
+       background-position: 50% 50%;
+       background-repeat: no-repeat;
+    }
+    
+    ul{
+        list-style: none;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        li{
+            text-align: center;
+        }
+        h3{
+            @extend .h-style;
+            color:$numbers
+        }
+
+    }
+    .rectangel{
+        width: 630px;
+        height: 130px;
+        border: 1px solid transparent;
+        margin:0 auto;
+        
+    }
+    
 }
     @include md {
         .header{
@@ -168,6 +206,16 @@ html , body{
                     }
                 }
             }
+        }
+        #process-flow{
+            .row{
+                h2{
+                    padding-right: 10rem;
+    
+                }
+               
+            }
+           
         }
     }
     @include xl {

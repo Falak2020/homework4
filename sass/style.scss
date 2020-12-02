@@ -218,6 +218,9 @@ html , body{
     .latest-news-text{
         padding:4rem 1rem;
     }
+    .date{
+        color:$btn-try-border;
+    }
 
 }
     @include md {

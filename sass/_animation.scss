@@ -1,0 +1,31 @@
+.fade-in {
+    animation: fadeIn ease 6s infinite;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .animate {
+    position: relative;
+
+    animation-name: slide-around;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes slide-around {
+    0%   { top: 0;left:calc(100% - 100px); }
+    25%   {top:0 ;left:0}
+    50%  { top:230px;left:0px; }
+    100%  { top:230px;left:0px; }
+   
+    
+}

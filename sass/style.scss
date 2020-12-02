@@ -9,23 +9,22 @@ html , body{
     padding: 0;
     margin: 0;
     font-size: 16px;
+    font-family:$font-roboto;
+}
+ul{
+    list-style: none;
 }
 //header Style**********************
 .header{
-    background-image: url('../images/BG.svg'); 
-    background-position: bottom center;
-    background-size: cover;
-    height: 500px;
+    background-image: url('../images/BG.png'); 
+    background-size: auto;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height:700px;
     .display-nav{
       display: grid;
       grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      gap: 1rem;
-      .navbar-brand{
-          grid-column: 1 / span 2;
-          border-bottom: 4px solid $btn-try-border ;
-
-      }
+      gap: 10rem;
     }
     .navbar{
         box-shadow: none;
@@ -38,6 +37,7 @@ html , body{
     .btn-try{
         border: 1px solid $btn-try-border;
         background-color: transparent;
+        border-radius: 5px;
     }
     
     .navbar-toggler{
@@ -231,6 +231,18 @@ html , body{
         }
     }
 
+}
+#footer{
+   
+    background-color: #1D252D;
+    .border-botomn{
+        border-bottom: 1px solid $light-white;
+    }
+    ul{
+        li{
+            margin-top:2rem;
+        }
+    }
 }
     @include md {
         .header{

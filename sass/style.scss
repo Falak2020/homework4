@@ -15,6 +15,9 @@ html , body{
 ul{
     list-style: none;
 }
+p{
+    font-family:$font-roboto ;
+}
 //header Style**********************
 .header{
     background-image: url('../images/BG.png'); 
@@ -32,13 +35,21 @@ ul{
         border-bottom: 1px solid $line-color;
     }
      .nav-link{
-        color: $nav-link-color !important;   
+        color: $nav-link-color !important;
+        &:hover{
+            color:$btn-try-border !important;
+        }   
     }
     
     .btn-try{
         border: 1px solid $btn-try-border;
         background-color: transparent;
-        border-radius: 5px;
+        box-shadow: 6px 8px 6px #888888;
+        &:hover{
+            box-shadow: 1px 1px 3px #888888;
+            color: #ffffff;
+            background-color:$btn-try-border;
+        }
     }
     
     .navbar-toggler{
@@ -73,12 +84,14 @@ ul{
             top:150px;
             h1{
                padding-right: 0rem;
-               font-family:$font-header;
             }
             p{
                 padding-right: 0rem;
                 font-family: $font-roboto;
                 margin-bottom: 5rem;
+            }
+            .btn{
+                background-image: url(../images/button-background.png);
             }
         }
         
@@ -91,8 +104,8 @@ ul{
         h2{
           @extend .h-style;
         }
-        p{
-            font-family:$font-roboto;  
+        .btn{
+            background-image:url(../images/button-background.png) ;
         }
     }
     .row{

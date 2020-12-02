@@ -92,6 +92,10 @@ p{
             }
             .btn{
                 background-image: url(../images/button-background.png);
+                box-shadow: 6px 8px 6px #888888;
+                &:hover{
+                    box-shadow: 1px 1px 3px #888888;
+                }
             }
         }
         
@@ -103,9 +107,14 @@ p{
     .paragraph2{
         h2{
           @extend .h-style;
+          padding-right: 2rem;
         }
         .btn{
             background-image:url(../images/button-background.png) ;
+            box-shadow: 6px 8px 6px #888888;
+                &:hover{
+                    box-shadow: 1px 1px 3px #888888;
+                }
         }
     }
     .row{
@@ -120,9 +129,6 @@ p{
     
     .row{
         position: relative;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        gap:10rem;
         .paragraph-3{
             margin-top: 5rem;   
         }
@@ -135,7 +141,6 @@ p{
 
         h2{
             @extend .h-style;
-            padding-right:0rem;
             padding-left:4rem;
         }
         
@@ -143,7 +148,7 @@ p{
             list-style: none;
             .numbers{
                 color: $numbers;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 font-family:$font-header;
             }
             h3{
@@ -159,7 +164,6 @@ p{
      text-align: center;
     }
     .para{
-        @extend .p-style;
         text-align: center;
     }
     .map-ap{
@@ -181,6 +185,7 @@ p{
             @extend .h-style;
             color:$numbers
         }
+        
 
     }
     .rectangel{
@@ -189,6 +194,18 @@ p{
         border: 1px solid transparent;
         margin:0 auto;
         
+    }
+    h4{
+        @extend .h-style;
+        font-size: 1.2rem;   
+    }
+    .btn{
+        background-image: url(../images/button-background.png);
+        font-weight: bold;
+        box-shadow: 6px 8px 6px #888888;
+                &:hover{
+                    box-shadow: 1px 1px 3px #888888;
+                }
     }
     
 }
@@ -313,15 +330,17 @@ p{
             }
         }
         #process-flow{
-            .row{
-                h2{
-                    padding-right: 10rem;
     
+            .row{
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:3rem;
+                .paragraph-3{
+                    margin-top: 5rem;   
                 }
-               
             }
-           
         }
+       
         #statistic{
             h1{
              

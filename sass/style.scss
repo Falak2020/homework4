@@ -142,13 +142,11 @@ html , body{
 #statistic{
     h1{
      @extend .h-style;
-     padding:3rem 20rem;
      text-align: center;
     }
     .para{
         @extend .p-style;
         text-align: center;
-        padding:0 20rem;
     }
     .map-ap{
        background-image: url(../images/Map.png);
@@ -158,6 +156,7 @@ html , body{
     }
     
     ul{
+        display: block;
         list-style: none;
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -171,7 +170,7 @@ html , body{
 
     }
     .rectangel{
-        width: 630px;
+        width: 330px;
         height: 130px;
         border: 1px solid transparent;
         margin:0 auto;
@@ -179,12 +178,70 @@ html , body{
     }
     
 }
+//------------------------------------------
+#cutomer-review{
+    padding-top: 5rem;
+    .image-black{
+       height: 70%;
+    }
+    .title{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        h1{
+          @extend .h-style;
+         
+        }
+    }
+    .orange-card{
+        position: absolute;
+        top:150px;
+        left:0px;
+    }
+    .text{
+        position: absolute;
+        top:150px;
+        left:100px;
+    }
+    .container{
+        position: relative;
+    }
+    .arrow{
+        position:absolute;
+        bottom:-450px;
+        right:0px;
+
+    }
+}
+#latest-news{
+    margin-top: 23rem;
+    .latest-news-text{
+        padding:4rem 1rem;
+    }
+
+}
     @include md {
         .header{
             height: 600px;
 
-            }
+        }
+        #statistic{
+            h1{
+             
+             padding:3rem 8rem;
             
+            }
+            .para{
+               
+               
+                padding:0 8rem;
+            }
+            .rectangel{
+                width: 630px;
+                height: 130px;
+                }
+
+            }
     }
  
     @include lg {
@@ -217,6 +274,49 @@ html , body{
             }
            
         }
+        #statistic{
+            h1{
+             
+             padding:3rem 15rem;
+            
+            }
+            .para{
+               
+               
+                padding:0 15rem;
+            }
+            .display-flex{
+                display: flex;
+                justify-content: space-around;
+            }
+
+        }
+        //----------------------------
+        #cutomer-review{
+            .title{
+                text-align: left;
+                width: 50%;
+            }
+            .orange-card{
+                top:150px;
+                left:-400px;
+            }
+            
+            .arrow{
+                bottom:-100px;
+                right:0px;
+            }
+        }
+        //-------------------------------
+        #latest-news{
+            margin-top: 7rem;
+            .latest-news-text{
+                padding:4rem 17rem;
+            }
+        
+        }
+        
+
     }
     @include xl {
       

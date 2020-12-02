@@ -221,6 +221,15 @@ html , body{
     .date{
         color:$btn-try-border;
     }
+    .background-rec{
+        height: 220px;
+        background-image: url(../images/Bg-2.png);
+        background-size: cover;
+        background-position:50% 100%;
+        h1{
+            margin-top: 5rem;
+        }
+    }
 
 }
     @include md {
@@ -245,6 +254,16 @@ html , body{
                 }
 
             }
+            #latest-news{
+                
+                .background-rec{
+                    h1{
+                        margin-top: 0;
+                    }
+                }
+            
+            }
+            
     }
  
     @include lg {
@@ -315,6 +334,11 @@ html , body{
             margin-top: 7rem;
             .latest-news-text{
                 padding:4rem 17rem;
+            }
+            .background-rec{
+                h1{
+                    margin-top: 0;
+                }
             }
         
         }

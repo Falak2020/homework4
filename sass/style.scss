@@ -21,18 +21,18 @@ p{
 //header Style**********************
 .header{
     background-image: url('../images/BG.png'); 
-    background-size: auto;
+    background-size: cover;
     background-position: left bottom;
     background-repeat: no-repeat;
     height:700px;
-    .display-nav{
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 10rem;
-    }
     .navbar{
         box-shadow: none;
         border-bottom: 1px solid $line-color;
+        .navbar-brand{
+            img{
+                height: 2rem;
+            }
+        }
     }
      .nav-link{
         color: $nav-link-color !important;

@@ -11,21 +11,19 @@
   }
 
   .animate {
-    position: relative;
+    position: relative;;
 
-    animation-name: slide-around;
+    animation-name: slide-around1;
     animation-duration: 8s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 
 }
-@keyframes slide-around {
+@keyframes slide-around1 {
     0%   { top: 0;left:calc(100% - 100px); }
     25%   {top:0 ;left:0}
-    50%  { top:230px;left:0px; }
-    100%  { top:230px;left:0px; }
-   
-    
+    50%  { top:200px;left:0; }
+    100%  { top:200px;left:0; }    
 }
 
 .animate-2 {

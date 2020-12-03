@@ -22,7 +22,7 @@ p{
 .header{
     background-image: url('../images/BG.png'); 
     background-size: cover;
-    background-position: left bottom;
+    background-position: center bottom;
     background-repeat: no-repeat;
     height:700px;
     .navbar{
@@ -36,6 +36,7 @@ p{
     }
      .nav-link{
         color: $nav-link-color !important;
+        font-weight: 500;
         &:hover{
             color:$btn-try-border !important;
         }   
@@ -75,7 +76,8 @@ p{
             .position-button{
                 position: absolute;
                 bottom: 70px;
-               left:100px;
+                left:100px;
+                cursor: pointer;
             }
                
         }
@@ -138,6 +140,13 @@ p{
             left: -300px;
             width: 800px;
         }
+        .black-screen{
+            position: absolute;
+            bottom:150px;
+            left:0;
+            width:45%; 
+            
+        }
 
         h2{
             @extend .h-style;
@@ -145,7 +154,6 @@ p{
         }
         
         ul{
-            list-style: none;
             .numbers{
                 color: $numbers;
                 font-size: 2.5rem;
@@ -175,7 +183,6 @@ p{
     
     ul{
         display: block;
-        list-style: none;
         padding-top: 5rem;
         padding-bottom: 5rem;
         li{
@@ -185,14 +192,12 @@ p{
             @extend .h-style;
             color:$numbers
         }
-        
-
     }
     .rectangel{
-        width: 330px;
-        height: 130px;
+        width: 70%;
         border: 1px solid transparent;
         margin:0 auto;
+        padding: 2rem 0;
         
     }
     h4{
@@ -211,43 +216,52 @@ p{
 }
 //------------------------------------------
 #cutomer-review{
-    padding-top: 5rem;
+     margin-top: 5rem;
     .image-black{
-       height: 70%;
+    width:70%;
     }
     .title{
-        text-align: center;
         position: relative;
-        width: 100%;
+        text-align: center;
+        top:0px;
         h1{
           @extend .h-style;
          
         }
     }
     .orange-card{
-        position: absolute;
-        top:150px;
-        left:0px;
+        position: sticky;
     }
     .text{
-        position: absolute;
-        top:150px;
-        left:100px;
+        background-color:$btn-try-border;
+        padding: 2rem 1rem;
+        h1{
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1em;
+            font-weight: 500;
+        }
+        i{
+            font-size: 1rem;
+        }
     }
-    .container{
-        position: relative;
-    }
+    
     .arrow{
-        position:absolute;
-        bottom:-450px;
-        right:0px;
-
-    }
+         cursor: pointer;
+        }
 }
 #latest-news{
-    margin-top: 23rem;
     .latest-news-text{
         padding:4rem 1rem;
+    }
+    .btn{
+        background-image: url(../images/buton-readmore.png);
+        font-weight: bold;
+        box-shadow: 6px 8px 6px #888888;
+                &:hover{
+                    box-shadow: 1px 1px 3px #888888;
+                }
     }
     .date{
         color:$btn-try-border;
@@ -287,16 +301,10 @@ p{
             
             }
             .para{
-               
-               
                 padding:0 8rem;
             }
-            .rectangel{
-                width: 630px;
-                height: 130px;
-                }
-
-            }
+        }
+       
             #latest-news{
                 
                 .background-rec{
@@ -362,7 +370,8 @@ p{
         #cutomer-review{
             .title{
                 text-align: left;
-                width: 50%;
+                width: 40%;
+                top:100px;
             }
             .orange-card{
                 top:150px;
@@ -376,7 +385,9 @@ p{
         }
         //-------------------------------
         #latest-news{
-            margin-top: 7rem;
+            .btn{
+                font-weight: bold;
+            }
             .latest-news-text{
                 padding:4rem 17rem;
             }

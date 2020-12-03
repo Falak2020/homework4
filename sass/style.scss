@@ -24,7 +24,7 @@ p{
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    height:700px;
+    height:500px;
     .navbar{
         box-shadow: none;
         border-bottom: 1px solid $line-color;
@@ -43,6 +43,8 @@ p{
     }
     
     .btn-try{
+        font-weight: bold;
+        padding: 0.7rem 2rem;
         border: 1px solid $btn-try-border;
         background-color: transparent;
         box-shadow: 6px 8px 6px #888888;
@@ -92,13 +94,6 @@ p{
                 font-family: $font-roboto;
                 margin-bottom: 5rem;
             }
-            .btn{
-                background-image: url(../images/button-background.png);
-                box-shadow: 6px 8px 6px #888888;
-                &:hover{
-                    box-shadow: 1px 1px 3px #888888;
-                }
-            }
         }
         
     }
@@ -111,7 +106,8 @@ p{
           @extend .h-style;
           padding-right: 2rem;
         }
-        .btn{
+        .btn{ 
+            font-weight: bold;
             background-image:url(../images/button-background.png) ;
             box-shadow: 6px 8px 6px #888888;
                 &:hover{
@@ -203,16 +199,7 @@ p{
     h4{
         @extend .h-style;
         font-size: 1.2rem;   
-    }
-    .btn{
-        background-image: url(../images/button-background.png);
-        font-weight: bold;
-        box-shadow: 6px 8px 6px #888888;
-                &:hover{
-                    box-shadow: 1px 1px 3px #888888;
-                }
-    }
-    
+    }  
 }
 //------------------------------------------
 #cutomer-review{
@@ -255,6 +242,10 @@ p{
     .latest-news-text{
         padding:4rem 1rem;
     }
+    .card-title{
+        @extend .h-style;
+        font-size: 1rem;
+    }
     .btn{
         background-image: url(../images/buton-readmore.png);
         font-weight: bold;
@@ -278,7 +269,6 @@ p{
 
 }
 #footer{
-   
     background-color: #1D252D;
     .border-botomn{
         border-bottom: 1px solid $light-white;
@@ -286,7 +276,23 @@ p{
     ul{
         li{
             margin-top:2rem;
+            font-weight: 500;
         }
+    }
+    input{
+        position: absolute;
+        height:60px;
+        width:300px;
+    }
+    .btn-subscribe{
+        position: absolute;
+        right:0px;
+        padding:1rem 0.5rem;
+        background-image: url(../images/buton-readmore.png);
+    }
+    h5{
+        @extend .h-style;
+        font-size: 1rem;
     }
 }
     @include md {
@@ -328,12 +334,7 @@ p{
               }
             .container{
                 .paragraph{
-                    h1{
-                       padding-right: 30rem;  
-                    }
-                    p{
-                        padding-right: 32rem;     
-                    }
+                    width:35%;
                 }
             }
         }
@@ -385,12 +386,10 @@ p{
         }
         //-------------------------------
         #latest-news{
-            .btn{
-                font-weight: bold;
-            }
             .latest-news-text{
                 padding:4rem 17rem;
             }
+            
             .background-rec{
                 h1{
                     margin-top: 0;

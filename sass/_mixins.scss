@@ -6,3 +6,11 @@
     font-family: $font-roboto;
     font-size: 1rem;
 }
+.btn{
+    background-image: url(../images/button-background.png);
+    font-weight: bold;
+    box-shadow: 6px 8px 6px #888888;
+            &:hover{
+                box-shadow: 1px 1px 3px #888888;
+            }
+}

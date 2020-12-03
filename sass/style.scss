@@ -286,9 +286,12 @@ p{
     }
     .btn-subscribe{
         position: absolute;
-        right:0px;
-        padding:1rem 0.5rem;
+        left:250px;
+        padding:1.1rem 0.5rem;
         background-image: url(../images/buton-readmore.png);
+    }
+    .explore{
+        margin-top: 5rem;
     }
     h5{
         @extend .h-style;
@@ -396,6 +399,11 @@ p{
                 }
             }
         
+        }
+        #footer{
+            .explore{
+                margin-top: 0rem;
+            }
         }
         
 

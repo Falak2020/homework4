@@ -278,6 +278,12 @@ p{
         li{
             margin-top:2rem;
             font-weight: 500;
+            a{
+                color: #ffffff;
+                &:hover{
+                    color:$btn-try-border;
+                }
+            }
         }
     }
     input{
@@ -287,7 +293,8 @@ p{
     }
     .btn-subscribe{
         position: absolute;
-        left:250px;
+        border:transparent;
+        left:225px;
         padding:1.1rem 0.5rem;
         background-image: url(../images/buton-readmore.png);
     }

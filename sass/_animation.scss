@@ -47,3 +47,26 @@
     }
 }
 //  animation: spin 4s linear infinite;
+//-----------------------------------
+
+.animate-3 {
+  position: relative;
+  animation-name: slide-around3;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-around3 {
+  0%   { top:0px;left:-100%; }
+  100%   {top:0px ;left:0}
+}
+//---------------------------------
+.animate-4{
+  position: relative;
+  animation-name: slide-around4;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-around4{
+  0%   { top:0px;right:-100%; }
+  100%   {top:0px ;right:0}
+}

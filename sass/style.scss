@@ -129,7 +129,7 @@ p{
     .row{
         position: relative;
         .paragraph-3{
-            margin-top: 5rem;   
+            margin-top: 3rem;   
         }
         .shape-2{
             position: absolute;
@@ -148,7 +148,6 @@ p{
 
         h2{
             @extend .h-style;
-            padding-left:4rem;
         }
         
         ul{
@@ -192,7 +191,7 @@ p{
         }
     }
     .rectangel{
-        width: 70%;
+        width: 100%;
         border: 1px solid transparent;
         margin:0 auto;
         padding: 2rem 0;
@@ -353,27 +352,19 @@ p{
                     margin-top: 5rem;
                     h2{
                         margin-right: 8rem;
+                        padding-left: 4rem;
                     }
                 }
             }
         }
-       
+       //--------------------
         #statistic{
             h1{
-             
              padding:3rem 15rem;
-            
             }
             .para{
-               
-               
-                padding:0 15rem;
+             padding:0 15rem;
             }
-            .display-flex{
-                display: flex;
-                justify-content: space-around;
-            }
-
         }
         //----------------------------
         #cutomer-review{
